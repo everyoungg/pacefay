@@ -16,7 +16,7 @@ function home(){
       <h1 class="home-title">더 빠르고 간편한<br>결제를 시작해보세요.</h1>
       <div class="balance-card">
         <div class="balance-label">SAFE PAY 이용 가능 금액</div>
-        <div class="balance-value">₩ 1,280,000</div>
+        <div class="balance-value">₩ 154,280,000</div>
         <div class="balance-sub">안전한 결제를 위한 가상 화면입니다.</div>
       </div>
       <div class="quick-row">
