@@ -1,8 +1,0 @@
-facepay-clean-app/
-├── public/
-├── src/
-│   ├── App.js
-│   ├── App.css
-│   └── index.js
-├── package.json
-└── README.md
