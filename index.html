@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="SAFE PAY 소비자 생체정보 안전 UX 프로토타입" />
+  <title>SAFE PAY</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <button class="brand" id="brandBtn" aria-label="처음 화면">SAFE<span>PAY</span></button>
+      <button class="help-btn" id="helpBtn" aria-label="안내">?</button>
+    </header>
+
+    <main id="app" class="screen"></main>
+
+    <div class="bottom-nav" aria-hidden="true">
+      <div class="bottom-item active"><span class="bottom-icon">⌂</span><small>홈</small></div>
+      <div class="bottom-item"><span class="bottom-icon">◯</span><small>결제</small></div>
+      <div class="bottom-item"><span class="bottom-icon">⌁</span><small>내역</small></div>
+    </div>
+  </div>
+
+  <div class="camera-modal hidden" id="cameraModal" role="dialog" aria-modal="true" aria-label="얼굴 등록">
+    <div class="camera-sheet">
+      <div class="sheet-handle"></div>
+      <button class="close-btn" id="closeCamera">×</button>
+      <div class="camera-title" id="cameraTitle">얼굴을 인식하고 있어요</div>
+      <div class="camera-sub" id="cameraSub">얼굴이 원 안에 오도록 휴대폰을 바라봐 주세요.</div>
+
+      <div class="camera-view">
+        <video id="camera" autoplay playsinline muted></video>
+        <div class="camera-overlay">
+          <div class="face-guide"></div>
+          <div class="scan-bar" id="scanBar"></div>
+        </div>
+        <div class="camera-status" id="cameraStatus"><span class="dot"></span> 얼굴 인식 중</div>
+      </div>
+
+      <div class="camera-progress"><span id="progressBar"></span></div>
+      <button class="camera-cancel" id="cameraCancel">취소</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
